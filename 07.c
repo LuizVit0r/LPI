@@ -3,9 +3,9 @@
 
 int main(void){
     char nome, nmenos, nmais;
-	int c=1, vit, emp, der, pts, P=0, p=1;
-	while(c<=20){
-		printf("Digite o nome do time %d: \n", c);
+	int q=1, vit, emp, der, pts, P=0, p=1;
+	while(q<=20){
+		printf("Digite o nome do time %d: \n", q);
 		scanf("%s",&nome);
 		printf("Digite o numero de vitorias: \n");
 		scanf("%d", &vit);
@@ -23,7 +23,7 @@ int main(void){
 			nmenos = nome;
 		}
 
-		c+=1;
+		q+=1;
 	}
 	printf("Time %c tem mais pontos.\n", nmais);
 	printf("Time %c tem menos pontos.\n", nmenos);
