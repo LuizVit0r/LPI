@@ -18,7 +18,7 @@ int main(void){
 			P = pts;
 			nmais = nome;
 		}
-		else{
+		else if{
 			p = pts;
 			nmenos = nome;
 		}
