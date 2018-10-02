@@ -2,7 +2,7 @@
 #include <string.h>
 
 int main(void){
-    char nome[20], nmenos[20], nmais[20];
+    char nome[30], nmenos[30], nmais[30];
 	int c=1, vit, emp, der, pts, P=0, p=1;
 	while(c<=20){
 		printf("Digite o nome do time %d: \n", c);
