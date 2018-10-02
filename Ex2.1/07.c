@@ -1,8 +1,8 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include <string.h>
 
 int main(void){
-    char nome, nmenos, nmais;
+    char nome[20], nmenos[20], nmais[20];
 	int c=1, vit, emp, der, pts, P=0, p=1;
 	while(c<=20){
 		printf("Digite o nome do time %d: \n", c);
@@ -16,16 +16,16 @@ int main(void){
 		pts = (vit*3) + emp;
 		if(pts>P){
 			P = pts;
-			nmais = nome;
+			strcpy(nmais,nome);
 		}
-		else if{
+		else if(pts<p){
 			p = pts;
-			nmenos = nome;
+			strcpy(nmenos,nome);
 		}
 
 		c+=1;
 	}
-	printf("Time %c tem mais pontos.\n", nmais);
-	printf("Time %c tem menos pontos.\n", nmenos);
+	printf("Time %s tem mais pontos.\n", nmais);
+	printf("Time %s tem menos pontos.\n", nmenos);
     return 0;
 }
