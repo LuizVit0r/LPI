@@ -17,8 +17,6 @@ int media(int n,int* vec){
 		soma+=*(vec+i);
 	}
 	med=(soma/n);
-	printf("===MEDIA===\n");
-	printf("media - %f\n",med);
 }
 int main(void){
 	int n,vetor[n];
@@ -26,5 +24,7 @@ int main(void){
 	scanf("%d",&n);
 	preenche(n,vetor);
 	media(n,vetor);
+	printf("===MEDIA===\n");
+	printf("media - %f\n",med);
 	return 0;
 }
