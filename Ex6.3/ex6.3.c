@@ -28,7 +28,7 @@ void vetor(ponto vec[]){
 
 void distancia(ponto vec[]){
 	int i;
-	float dist=0,max=0;
+	double dist=0,max=0;
 	ponto distante;
 	for(i=0;i<=10;i+=1){
 		dist=sqrt(pow(vec[i].x,2)+pow(vec[i].y,2));
