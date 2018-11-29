@@ -20,7 +20,7 @@ void preenche(struct Jogador* p){
 	scanf("%d",&(*p).av);
 	if((*p).av==1){
 		printf("Nome: ");
-		scanf("%s",&((*p).reg.nome));
+		scanf("%s",((*p).reg.nome));
 	}else if((*p).av==2){
 		printf("Numero: ");
 		scanf("%d",&((*p).reg.num));
@@ -45,7 +45,7 @@ int main(void){
 	if(q.j.av==1){
 		printf("Nome - %s | Jogos - %d | Gols - %d | Assistencias - %d\n",q.j.reg.nome,q.j.jog,q.gol,q.ass);
 	}else if(q.j.av==2){
-		printf("Número - %d | Jogos - %d | Gols - %d | Assistencias - %d\n",q.j.reg.num,q.j.jog,q.gol,q.ass);
+		printf("NÃºmero - %d | Jogos - %d | Gols - %d | Assistencias - %d\n",q.j.reg.num,q.j.jog,q.gol,q.ass);
 	}
 	return 0;
 }
