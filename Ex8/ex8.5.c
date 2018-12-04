@@ -53,7 +53,7 @@ int main(void){
 		fwrite(&q.ass,sizeof(int), 1,f);
 	}
 	fclose(f);
-	FILE* g=fopen("jogador.txt", "rb");
+	FILE* g=fopen("/home/ime/jogador.txt", "rb");
 	struct Jogador2 x;
 	printf("DADOS DO JOGADOR\n");
 	if(q.j.av==1){
