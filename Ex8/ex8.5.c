@@ -38,7 +38,7 @@ void preenche2(struct Jogador2* q){
 int main(void){
 	struct Jogador2 q;
 	preenche2(&q);
-	FILE* f=fopen("jogador.txt", "wb");
+	FILE* f=fopen("/home/ime/jogador.txt", "wb");
 	if(q.j.av==1){
 		fwrite(&q.j.reg.nome,sizeof(char),(strlen(q.j.reg.nome)+1),f);
 		fwrite(&q.j.jog,sizeof(int),1,f);
@@ -57,7 +57,7 @@ int main(void){
 	struct Jogador2 x;
 	printf("DADOS DO JOGADOR\n");
 	if(q.j.av==1){
-		fread(&x.j.reg.nome,sizeof(char),(strlen(x.j.reg.nome)+1),g);
+		fread(&x.j.reg.nome,sizeof(char),(strlen(q.j.reg.nome)+1),g);
 		fread(&x.j.jog,sizeof(int),1,g);
 		fread(&x.j.av,sizeof(int),1,g);
 		fread(&x.gol,sizeof(int),1,g);
