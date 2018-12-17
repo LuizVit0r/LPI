@@ -12,7 +12,7 @@ int main(void){
     int n;
     printf("Digite o numero de pessoas:\n");
     scanf("%d", &n);
-    FILE* f= fopen("C/Users/Luiz/Documentos/ex8.bin", "wb");
+    FILE* f= fopen("C:/Users/Luiz/Documentos/ex8.bin", "wb");
     fwrite(&n, sizeof(int), 1, f);
     for (int i=0;i<n;i++){
         printf("Insira o a idade e o nome da pessoa, respectivamente\n");
