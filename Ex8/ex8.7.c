@@ -14,8 +14,8 @@ int main(void){
     FILE* f= fopen("C:/Users/Luiz/Documentos/ex8.bin", "rb");
     fread(&n, sizeof(int), 1, f);
     for (int i=0;i<n;i++){
-        fread(&v[i].idade, sizeof(int), 1, f);
-        fread(v[i].nome, sizeof(char), , f);
+        fread(&v[i],sizeof(struct Pessoa),1,f);
+        v[i].nome[25]='\0';
     }
     for (int j=0;j<n;j++){
         printf("%d %s", v[j].idade, v[j].nome);
